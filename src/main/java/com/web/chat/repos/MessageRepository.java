@@ -3,6 +3,8 @@ package com.web.chat.repos;
 import com.web.chat.models.Message;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface MessageRepository extends JpaRepository<Message, Long> {
+import java.util.List;
 
+public interface MessageRepository extends JpaRepository<Message, Long> {
+    public List<Message> findAllByTopicId(Long topicId);
 }

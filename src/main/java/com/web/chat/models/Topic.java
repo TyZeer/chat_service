@@ -24,4 +24,7 @@ public class Topic {
 
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     public List<Message> topicMessages;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<Image> topicImages;
 }

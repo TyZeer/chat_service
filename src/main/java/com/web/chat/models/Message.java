@@ -17,10 +17,9 @@ public class Message implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long sender_id;
-    private Long recipient_id;
+    private Long senderId;
+    private Long recipientId;
     private String contents;
     private LocalDateTime timestamp;
-    private Long topic_id;
-
+    private Long topicId;
 }
